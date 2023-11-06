@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 nav{
     width: 100%;
     display: flex;
@@ -6,6 +9,7 @@ nav{
     flex-wrap: wrap;
     width: 30vw;
 }
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -26,4 +30,37 @@ ul{
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+.px-8{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.h1Header{
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.h2Header{
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+.pHeader{
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.dl {
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    padding: 8px;
+}
+.ml-0{
+    margin-inline-start: 0px;
 }
