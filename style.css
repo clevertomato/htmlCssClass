@@ -189,6 +189,13 @@ ul{
     .mainBtnSection{
         justify-content: space-between;
     }
+    .navegacion{
+        display: none;
+    }
+    .pHeader{
+        padding-left: 16px;
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -200,6 +207,9 @@ ul{
         padding-left:40px;
         padding-right: 40px;
     }
+    .navegacion{
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 1300px) and (min-width: 1024px) {
     .imgMain{
@@ -208,6 +218,9 @@ ul{
     }
     .navegacion a{
         font-size: 18px;
+    }
+    .navegacion{
+        width: 50%;
     }
 }
 
@@ -220,11 +233,5 @@ ul{
 @media only screen and (min-width: 1700px) {
     .navegacion a{
         font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .navegacion{
-        display: none;
     }
 }
