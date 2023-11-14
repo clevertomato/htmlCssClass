@@ -19,6 +19,10 @@ a{
     height: fit-content;
     display: flex;
     flex-direction: row;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .h1Main{
@@ -36,9 +40,24 @@ a{
     font-weight: 600;
     display: flex;
     flex-direction: column;
+    line-height: 0.9;
+}
+
+.leftMain{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
 }
 header p{
     text-transform: none;
+}
+.imgMain{
+    width: 50%;
+    object-fit: none;
+    margin-right: auto;
 }
 
 .navegacion{
@@ -49,7 +68,6 @@ header p{
     gap: 32px;
     flex-wrap: wrap;
     width: 40%;
-    
 }
 
 .navegacion a{
@@ -85,12 +103,6 @@ ul{
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-.p-16{
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
 .pl-8{
     padding-left: 16px;
@@ -150,8 +162,69 @@ ul{
     background-color: white;
     color: black;
 }
-@media only (max-width: 768px) { 
-    header{
-        flex-direction: row;
+@media only screen and (max-width: 768px) {
+    .mainheader{
+        width: 90%;
+        flex-direction: column;
+        gap: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imgMain{
+        height: auto;
+        width: 90%;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    .leftMain{
+        height: auto;
+        width: 90%;
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: 0px;
+    }
+    .mainBtnSection{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .imgMain{
+        width: 50%;
+        object-fit: fill;
+    }
+    .btnSquareMd{
+        padding-left:40px;
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width: 1300px) and (min-width: 1024px) {
+    .imgMain{
+        width: 50%;
+        object-fit: contain;
+    }
+    .navegacion a{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 1300px) {
+    .navegacion a{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .navegacion a{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navegacion{
+        display: none;
     }
 }
