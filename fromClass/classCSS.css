@@ -1,0 +1,17 @@
+/*se aplica a los elementos "a" cuyas paginas hayan sido ya visitadas que se encuentren dentro de aquellos que tengan la clase "tex-white"  */
+.text-white a:visited{
+    color:gray;
+}
+.padding{
+    padding: 8px 36px 24px; /*arriba abajo (izquierda y derecha)*/ 
+}
+
+.padding2{
+    padding: 8px 36px 8px 36px; /*arriba abajo (izquierda y derecha)*/ 
+}
+
+/*
+BLOCK
+ELEMENT block__xxx
+MODIFIER block--xxx
+*/

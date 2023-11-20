@@ -14,7 +14,7 @@ a{
 }
 
 .mainheader{
-    width: 100%;
+    width: auto;
     position: relative;
     height: fit-content;
     display: flex;
@@ -22,7 +22,6 @@ a{
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 16px;
-    padding-bottom: 16px;
 }
 
 .h1Main{
@@ -49,7 +48,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
+    padding-bottom: 16px;
 }
 header p{
     text-transform: none;
@@ -58,6 +57,7 @@ header p{
     width: 50%;
     object-fit: none;
     margin-right: auto;
+    padding-top: 16px;
 }
 
 .navegacion{
@@ -162,9 +162,34 @@ ul{
     background-color: white;
     color: black;
 }
+
+.about{
+    background-color: #1F1F1F;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: white;
+}
+.titleAbout{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.textAbout{
+    font-size: 16px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media only screen and (max-width: 768px) {
     .mainheader{
-        width: 90%;
+        width: auto;
         flex-direction: column;
         gap: 32px;
         margin-left: auto;
