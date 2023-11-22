@@ -7,137 +7,163 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="flex-row justify-between p-8" id="topBar">
+    <div class="flex-row justify-between p-8 bgPink" id="topBar">
         <div>
             <a href="">
                 <img src="./src/logo.svg" alt="sarah" height="70px" width="auto" >
             </a>
         </div>
-        <nav class="navegacion flex-row my-auto">
+        <nav class="navegation my-auto">
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Portfolio</a>
             <a href="">Blog</a>
         </nav>
-        <div class="my-auto btnSquareSm bgBlack">
+        <div class="my-auto btnSquareTalk bgBlack">
             <a class="text-white" href="" >Let's Talk</a>
         </div>    
     </div>
-    <header class="mainheader p-16">
-        <div class="leftMain">
-            <h1 class="h1Main h1Header">UX Designers</h1>
-            <h2 class="h2Main h2Header">Hi There, I'm <span class="redText">Sarah Jones</span></h2>
-            <p class="pHeader">    
+    <header class="header bgPink">
+        <div class="header__leftPart">
+            <h1 class="header__h1">UX Designers</h1>
+            <h2 class="header__h2">Hi There, I'm <span class="redText">Sarah Jones</span></h2>
+            <p class="header_text">    
                 Welcome to my portolio of captivating digital experiences. Explore my work and let's create something extraordinary together.
             </p>
             <div class="mainBtnSection pl-8">
-                <button class="btnSquareMd bgBlack">Hire Me</button>
-                <a href="/portfolio" class="btnSquareMd bgWhite">Portfolio</a>
+                <button class="btnSquare bgBlack">Hire Me</button>
+                <a href="/portfolio" class="btnSquare bgWhite">Portfolio</a>
             </div>
         </div>
         <img src="./src/main.png" alt="sarah" class="imgMain">
     </header>
     <section class="about">
-        <h2 class="titleAbout">About Me</h2>
-        <p class="textAbout">We`re Sarah Jones, a UX/UI designers dedicated to crafting intuitive and visually sutnning digital experiences. With a passion for user-centric design, we transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
-        <div class="infoAbout">
-            <dl class="factAbout">
-                <dt >502</dt>
-                <dd>Projects Done</dd>
+        <h2 class="tittleSection">About Me</h2>
+        <p class="infoSection">We`re Sarah Jones, a UX/UI designers dedicated to crafting intuitive and visually sutnning digital experiences. With a passion for user-centric design, we transform ideas into functional and beautiful interfaces. Let's collaborate and shape the future of design together.</p>
+        <div class="about__info">
+            <dl class="about__fact">
+                <dt class="about__dt">Projects Done</dt>
+                <dd class="about__dd">502</dd>
             </dl>
-            <dl class="factAbout">
-                <dt>10+</dt>
-                <dd>Years of Experience</dd>
+            <dl class="about__fact">
+                <dt class="about__dt">Years of Experience</dt>
+                <dd class="about__dd">10+</dd>
             </dl>
-            <dl class="factAbout">
-                <dt>273</dt>
-                <dd>Clients Served</dd>
+            <dl class="about__fact">
+                <dt class="about__dt">Clients Served</dt>
+                <dd class="about__dd">273</dd>
             </dl>
         </div>
     </section>
-    <section>
-        <h2>Services</h2>
-        <p>Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+    <section class="services">
+        <h2 class="tittleSection">Services</h2>
+        <p class="infoSection">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
         <ul class="flex-row my-auto">
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="icon1">
-                <h3>Design</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt totam modi architecto, nobis fugiat provident assumenda odio cupiditate qui doloremque dignissimos voluptates illum saepe quam perferendis possimus consequuntur alias itaque?</p>
+            <li class="service">
+                <img src="./src/iconos/design.svg" alt="icon1" class="service__img">
+                <h3 class="service__tittle">Design</h3>
+                <p class="service__text">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</p>
             </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="icon2">
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt totam modi architecto, nobis fugiat provident assumenda odio cupiditate qui doloremque dignissimos voluptates illum saepe quam perferendis possimus consequuntur alias itaque?</p>
+            <li class="service">
+                <img src="./src/iconos/branding.svg" alt="icon2" class="service__img">
+                <h3 class="service__tittle">Branding</h3>
+                <p class="service__text">I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.</p>
             </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="icon3">
-                <h3>Ux Research</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt totam modi architecto, nobis fugiat provident assumenda odio cupiditate qui doloremque dignissimos voluptates illum saepe quam perferendis possimus consequuntur alias itaque?</p>
+            <li class="service">
+                <img src="./src/iconos/search.svg" alt="icon3" class="service__img">
+                <h3 class="service__tittle">Ux Research</h3>
+                <p class="service__text">I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.</p>
             </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="icon4">
-                <h3>Alternatives</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt totam modi architecto, nobis fugiat provident assumenda odio cupiditate qui doloremque dignissimos voluptates illum saepe quam perferendis possimus consequuntur alias itaque?</p>
+            <li class="service">
+                <img src="./src/iconos/usability.svg" alt="icon4" class="service__img">
+                <h3 class="service__tittle">Alternatives</h3>
+                <p class="service__text">I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="portfolio">
+        <div class="portfolio__header bgPink ">
+            <h2 class="portfolio__tittle">My Portfolio</h2>
+            <p class="portfolio__info">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+        </div>
+        <ul class="portfolio_grid">
+            <li class="portfolio__app">
+                <img class="portfolio__img" src="./src/Image1.jpg" alt="6">
+                <div class="portfolio__textImg flex-row">
+                    <div class="portfolio__textImg flex-col">
+                        <a href="/test"><h4>Educational Platform</h4></a>
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portfolio__appDivImg">
+                        <img src="./src/iconos/send.svg" alt="6">
+                    </div>
+                </div>  
+            </li>
+            <li class="portfolio__app">
+                <img class="portfolio__img" src="./src/Image2.jpg" alt="travel app">
+                <div class="portfolio__textImg flex-row">
+                    <div class="portfolio__textImg flex-col">
+                        <a href="/test"><h4>Travel App Design</h4></a>
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portfolio__appDivImg">
+                        <img src="./src/iconos/send.svg" alt="6">
+                    </div>
+                </div>  
+            </li>
+            <li class="portfolio__app">
+                <img class="portfolio__img" src="./src/Image3.jpg" alt="personal page">
+                <div class="portfolio__textImg flex-row">
+                    <div class="portfolio__textImg flex-col">
+                        <a href="/test"><h4>Personal Page</h4></a>
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portfolio__appDivImg">
+                        <img src="./src/iconos/send.svg" alt="6">
+                    </div>
+                </div>  
+            </li>
+            <li class="portfolio__app">
+                <img class="portfolio__img" src="./src/Image4.jpg" alt="Furniture">
+                <div class="portfolio__textImg flex-row">
+                    <div class="portfolio__textImg flex-col">
+                        <a href="/test"><h4>Furniture</h4></a>
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portfolio__appDivImg">
+                        <img src="./src/iconos/send.svg" alt="6">
+                    </div>
+                </div>  
+            </li>
+            <li class="portfolio__app">
+                <img class="portfolio__img" src="./src/Image5.jpg" alt="coffee house">
+                <div class="portfolio__textImg flex-row">
+                    <div class="portfolio__textImg flex-col">
+                        <a href="/test"><h4>Coffee House Landing Page</h4></a>
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portfolio__appDivImg">
+                        <img src="./src/iconos/send.svg" alt="6">
+                    </div>
+                </div>  
+            </li>
+            <li class="portfolio__app">
+                <img class="portfolio__img" src="./src/Image6.jpg" alt="home services">
+                <div class="portfolio__textImg flex-row">
+                    <div class="portfolio__textImg flex-col">
+                        <a href="/test"><h4>Home Services Page</h4></a>
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="portfolio__appDivImg">
+                        <img src="./src/iconos/send.svg" alt="6">
+                    </div>
+                </div>  
             </li>
         </ul>
     </section>
     <section>
-        <h2>My Portfolio</h2>
-        <p>Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
-        <ul>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="6">
-                <a href="/test"><h4>Educational Platform</h4></a>
-                <div class="flex-row">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./src/iconos/iconSquare.svg" alt="6">
-                </div>
-            </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="6">
-                <a href="/test"><h4>Travel App Design</h4></a>
-                <div class="flex-row">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./src/iconos/iconSquare.svg" alt="6">
-                </div>
-            </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="6">
-                <a href="/test"><h4>Personal Page</h4></a>
-                <div class="flex-row">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./src/iconos/iconSquare.svg" alt="6">
-                </div>
-            </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="6">
-                <a href="/test"><h4>Furniture</h4></a>
-                <div class="flex-row">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./src/iconos/iconSquare.svg" alt="6">
-                </div>
-            </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="6">
-                <a href="/test"><h4>Coffee House Landing Page</h4></a>
-                <div class="flex-row">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./src/iconos/iconSquare.svg" alt="6">
-                </div>
-            </li>
-            <li>
-                <img src="./src/iconos/iconSquare.svg" alt="6">
-                <a href="/test"><h4>Home Services Page</h4></a>
-                <div class="flex-row">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <img src="./src/iconos/iconSquare.svg" alt="6">
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>My Portfolio</h2>
-        <p>Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+        <h2 class="tittleSection">My Portfolio</h2>
+        <p class="infoSection">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
         <ul class="coreGrid">
             <li class="flex-col">
                 <label for="interactDesign">Interaction Design</label>
