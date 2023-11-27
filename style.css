@@ -15,22 +15,8 @@ ul{
     list-style-type: none;
 }
 
+
 /***************CLASES*********************/
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-
-.justify-between{
-    justify-content: space-between;
-}
-
-.p-8{
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
 
 .navegation{
     width: 100%;
@@ -48,30 +34,11 @@ ul{
     font-size: 18px;
 }
 
-.my-auto{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.margin-0{
-    margin: 0px;
-}
-.pl-8{
-    padding-left: 16px;
-}
-
 .btnSquareTalk{
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 12px;
     padding-bottom: 12px;
-}
-
-.bgBlack{
-    background-color: black;
-    color: white;
-}
-.bgPink{
-    background-color: #FFD4D0;
 }
 
 .header{
@@ -122,9 +89,7 @@ header p{
     margin-left: auto;
     transition: all 1s ease-in-out;
 }
-.redText{
-    color: red;
-}
+
 
 .flex-col{
     display: flex;
@@ -132,10 +97,6 @@ header p{
 }
 
 
-.px-8{
-    padding-left: 16px;
-    padding-right: 16px;
-}
 .h2Header{
     padding-left: 16px;
     padding-right: 16px;
@@ -174,10 +135,7 @@ header p{
     padding-top: 12px;
     padding-bottom: 12px;
 }
-.bgWhite{
-    background-color: white;
-    color: black;
-}
+
 
 .about{
     background-color: #1F1F1F;
@@ -322,6 +280,53 @@ header p{
     display: flex;
     align-items: end;
 }
+
+.redText{
+    color: red;
+}
+.bgBlack{
+    background-color: black;
+    color: white;
+}
+.bgPink{
+    background-color: #FFD4D0;
+}
+.bgWhite{
+    background-color: white;
+    color: black;
+}
+
+.px-8{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.margin-0{
+    margin: 0px;
+}
+.pl-8{
+    padding-left: 16px;
+}
+.p-8{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
 /*******MEDIAS****************/
 @media only screen and (max-width: 768px) {
     .header{
