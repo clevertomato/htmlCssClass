@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="flex-row justify-between p-8 bgPink" id="topBar">
+    <div class="topBar" id="topBar"> 
         <div>
             <a href="">
                 <img src="./src/logo.svg" alt="sarah" height="70px" width="auto" >
             </a>
         </div>
-        <nav class="navegation my-auto">
+        <nav class="navegation">
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Portfolio</a>
             <a href="">Blog</a>
         </nav>
-        <div class="my-auto btnSquareTalk">
-            <a class="text-white" href="" >Let's Talk</a>
-        </div>    
+        <a class="btnSquareTalk" href="" >Let's Talk</a>
     </div>
     <header class="header bgPink">
         <div class="header__leftPart">
@@ -30,12 +28,12 @@
             <p class="header__text">    
                 Welcome to my portolio of captivating digital experiences. Explore my work and let's create something extraordinary together.
             </p>
-            <div class="mainBtnSection pl-8">
+            <div class="header__btnSection pl-8">
                 <button class="btnSquare">Hire Me</button>
                 <a href="/portfolio" class="btnSquare bgWhite">Portfolio</a>
             </div>
         </div>
-        <img src="./src/main.png" alt="sarah" class="imgMain">
+        <img src="./src/main.png" alt="sarah" class="header__img">
     </header>
     <section class="about">
         <h2 class="tittleSection">About Me</h2>
@@ -58,7 +56,7 @@
     <section class="services">
         <h2 class="tittleSection">Services</h2>
         <p class="infoSection">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
-        <ul class="flex-row my-auto">
+        <ul class="services__items">
             <li class="service">
                 <img src="./src/iconos/design.svg" alt="icon1" class="service__img">
                 <h3 class="service__tittle">Design</h3>
@@ -89,7 +87,7 @@
         <ul class="portfolio_grid">
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image1.jpg" alt="6">
-                <div class="portfolio__textImg flex-row">
+                <div class="portfolio__app_content flex-row">
                     <div class="portfolio__textImg flex-col">
                         <a href="/test"><h4>Educational Platform</h4></a>
                         <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -101,7 +99,7 @@
             </li>
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image2.jpg" alt="travel app">
-                <div class="portfolio__textImg flex-row">
+                <div class="portfolio__app_content flex-row">
                     <div class="portfolio__textImg flex-col">
                         <a href="/test"><h4>Travel App Design</h4></a>
                         <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -113,7 +111,7 @@
             </li>
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image3.jpg" alt="personal page">
-                <div class="portfolio__textImg flex-row">
+                <div class="portfolio__app_content flex-row">
                     <div class="portfolio__textImg flex-col">
                         <a href="/test"><h4>Personal Page</h4></a>
                         <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -125,7 +123,7 @@
             </li>
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image4.jpg" alt="Furniture">
-                <div class="portfolio__textImg flex-row">
+                <div class="portfolio__app_content flex-row">
                     <div class="portfolio__textImg flex-col">
                         <a href="/test"><h4>Furniture</h4></a>
                         <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -137,7 +135,7 @@
             </li>
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image5.jpg" alt="coffee house">
-                <div class="portfolio__textImg flex-row">
+                <div class="portfolio__app_content flex-row">
                     <div class="portfolio__textImg flex-col">
                         <a href="/test"><h4>Coffee House Landing Page</h4></a>
                         <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -149,7 +147,7 @@
             </li>
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image6.jpg" alt="home services">
-                <div class="portfolio__textImg flex-row">
+                <div class="portfolio__app_content flex-row">
                     <div class="portfolio__textImg flex-col">
                         <a href="/test"><h4>Home Services Page</h4></a>
                         <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

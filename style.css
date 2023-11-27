@@ -10,13 +10,13 @@ body{
     margin: 0px;
 }
 .h1{
-font-size: px;
+font-size: 52px;
 }
 .h2{
-
+    font-size: 48px;
 }
 .h3{
-
+font-size: 24px;
 }
 a{
         text-decoration: none;
@@ -31,12 +31,23 @@ ul{
 }
 
 /***************CLASES*********************/
-
+.topBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #FFD4D0;
+}
 .navegation{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 32px;
     flex-wrap: wrap;
     width: 40%;
@@ -97,7 +108,7 @@ ul{
     padding-bottom: 16px;
 }
 
-.imgMain{
+.header__img{
     margin-top: auto;
     width: 50%;
     object-fit: none;
@@ -118,16 +129,10 @@ ul{
     font-size: 18px;
     font-weight: 400;
 }
-.mainBtnSection{
+.header__btnSection{
     display: flex;
     flex-direction: row;
     gap: 16px;
-}
-.dl{
-
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    padding: 8px;
 }
 .coreGrid{
         display: grid;
@@ -222,12 +227,14 @@ ul{
     flex-direction: column;
     gap: 6px;
 }
+.services__items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
 .service__img{
     width: min-content;
-}
-.service__text{
-    margin: 0px;
-    font-size: 14px;
 }
 .service__tittle{
     font-size: 18px;
@@ -280,10 +287,19 @@ ul{
     height: min-content;
     align-items: end;
 }
+.portfolio__app_content{
+    width: auto;
+    margin-top: 8px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
 .portfolio__textImg{
     width: auto;
     margin-top: 8px;
     gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .portfolio__appDivImg{
     display: flex;
@@ -316,21 +332,6 @@ ul{
 .pl-8{
     padding-left: 16px;
 }
-.p-8{
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-
-.justify-between{
-    justify-content: space-between;
-}
 
 /*******MEDIAS****************/
 @media only screen and (max-width: 768px) {
@@ -341,7 +342,7 @@ ul{
         margin-left: auto;
         margin-right: auto;
     }
-    .imgMain{
+    .header__img{
         height: auto;
         width: 90%;
         object-fit: cover;
@@ -380,7 +381,7 @@ ul{
         padding-left: 32px;
         padding-right: 32px;
     }
-    .imgMain{
+    .header__img{
         width: 50%;
         object-fit: fill;
         margin-top: unset;
@@ -394,7 +395,7 @@ ul{
     }
 }
 @media only screen and (max-width: 1300px) and (min-width: 1024px) {
-    .imgMain{
+    .header__img{
         width: 50%;
         object-fit: fill;
     }
@@ -407,7 +408,7 @@ ul{
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 1300px) {
-    .imgMain{
+    .header__img{
         object-fit: fill;
     }
     .navegation a{
@@ -419,7 +420,7 @@ ul{
     .navegation a{
         font-size: 24px;
     }
-    .imgMain{
+    .header__img{
         object-fit: fill;
     }
 }
