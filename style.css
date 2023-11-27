@@ -4,10 +4,19 @@ html{
     font-size: 100%; /* el navegador tiene un size predeterminado de 16px, así que al poner el 100% es lo mismo que 16px*/
     font-weight: normal;
     color: hsl(0,0,12%);
+    line-height: 1.5;
 }
 body{
-    padding: 0px;
     margin: 0px;
+}
+.h1{
+font-size: px;
+}
+.h2{
+
+}
+.h3{
+
 }
 a{
         text-decoration: none;
@@ -169,7 +178,7 @@ ul{
     font-weight: 700;
 }
 .about__dd{
-    margin-top: -84px;
+    margin-top: -100px;
     font-size: 64px;
     color: #FFD4D0;
     font-weight: 700;
