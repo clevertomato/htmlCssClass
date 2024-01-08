@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    <div class="topBar" id="topBar"> 
-        <div>
-            <a href="">
-                <img src="./src/logo.svg" alt="sarah" height="70px" width="auto" >
-            </a>
-        </div>
-        <nav class="navegation">
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Blog</a>
-        </nav>
-        <a class="btnSquareTalk" href="" >Let's Talk</a>
-    </div>
-    <header class="header bgPink">
-        <div class="header__leftPart">
-            <h1 class="header__h1">UX Designers</h1>
-            <h2 class="header__h2">Hi There, I'm <span class="redText">Sarah Jones</span></h2>
-            <p class="header__text">    
-                Welcome to my portolio of captivating digital experiences. Explore my work and let's create something extraordinary together.
-            </p>
-            <div class="header__btnSection pl-8">
-                <button class="btnSquare">Hire Me</button>
-                <a href="/portfolio" class="btnSquare bgWhite">Portfolio</a>
+    <header class="header">
+        <div class="topBar" id="topBar"> 
+            <div>
+                <a href="">
+                    <img src="./src/logo.svg" alt="sarah" height="70px" width="auto" >
+                </a>
             </div>
+            <nav class="navegation">
+                <a href=""><div class="redCircle circleTopBar"></div><p>About</p></a>
+                <a href="">Services</a>
+                <a href="">Portfolio</a>
+                <a href="">Blog</a>
+            </nav>
+            <a class="btnSquareTalk" href="" >Let's Talk</a>
         </div>
-        <img src="./src/main.png" alt="sarah" class="header__img">
+
+        <div class="hero bgPink">
+            <div class="hero__leftPart">
+                <h1 class="hero__h1">UX Designers</h1>
+                <h2 class="hero__h2">Hi There, I'm <span class="redText">Sarah Jones</span></h2>
+                <p class="hero__text">    
+                    Welcome to my portolio of captivating digital experiences. Explore my work and let's create something extraordinary together.
+                </p>
+                <div class="hero__btnSection pl-8">
+                    <button class="btnSquare">Hire Me</button>
+                    <a href="/portfolio" class="btnSquare bgWhite">Portfolio</a>
+                </div>
+            </div>
+            <img src="./src/main.png" alt="sarah" class="hero__img">
+        </div>
     </header>
     <section class="about">
         <h2 class="tittleSection">About Me</h2>
@@ -52,6 +56,7 @@
                 <dd class="about__dd">273</dd>
             </dl>
         </div>
+        <div class="redCircle circleAbout"></div>
     </section>
     <section class="services">
         <h2 class="tittleSection">Services</h2>
@@ -82,133 +87,153 @@
     <section class="portfolio">
         <div class="portfolio__header bgPink ">
             <h2 class="portfolio__tittle">My Portfolio</h2>
-            <p class="portfolio__info">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+            <p class="infoSection">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
         </div>
         <ul class="portfolio_grid">
             <li class="portfolio__app">
-                <img class="portfolio__img" src="./src/Image1.jpg" alt="6">
-                <div class="portfolio__app_content flex-row">
-                    <div class="portfolio__textImg flex-col">
+                <img class="portfolio__img" src="./src/Image1.jpg" alt="Educational Platform">
+                <div class="portfolio__app_content">
+                    <div class="portfolio__app__tittle">
                         <a href="/test"><h4>Educational Platform</h4></a>
-                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="portfolio__appDivImg">
+                    <div class="portfolio__app__text">
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./src/iconos/send.svg" alt="6">
                     </div>
                 </div>  
             </li>
             <li class="portfolio__app">
-                <img class="portfolio__img" src="./src/Image2.jpg" alt="travel app">
-                <div class="portfolio__app_content flex-row">
-                    <div class="portfolio__textImg flex-col">
+                <img class="portfolio__img" src="./src/Image2.jpg" alt="Travel App design">
+                <div class="portfolio__app_content">
+                    <div class="portfolio__app__tittle">
                         <a href="/test"><h4>Travel App Design</h4></a>
-                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="portfolio__appDivImg">
+                    <div class="portfolio__app__text">
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./src/iconos/send.svg" alt="6">
                     </div>
                 </div>  
             </li>
             <li class="portfolio__app">
-                <img class="portfolio__img" src="./src/Image3.jpg" alt="personal page">
-                <div class="portfolio__app_content flex-row">
-                    <div class="portfolio__textImg flex-col">
+                <img class="portfolio__img" src="./src/Image3.jpg" alt="Personal Page">
+                <div class="portfolio__app_content">
+                    <div class="portfolio__app__tittle">
                         <a href="/test"><h4>Personal Page</h4></a>
-                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="portfolio__appDivImg">
+                    <div class="portfolio__app__text">
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./src/iconos/send.svg" alt="6">
                     </div>
                 </div>  
             </li>
             <li class="portfolio__app">
                 <img class="portfolio__img" src="./src/Image4.jpg" alt="Furniture">
-                <div class="portfolio__app_content flex-row">
-                    <div class="portfolio__textImg flex-col">
+                <div class="portfolio__app_content">
+                    <div class="portfolio__app__tittle">
                         <a href="/test"><h4>Furniture</h4></a>
-                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="portfolio__appDivImg">
+                    <div class="portfolio__app__text">
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./src/iconos/send.svg" alt="6">
                     </div>
                 </div>  
             </li>
             <li class="portfolio__app">
-                <img class="portfolio__img" src="./src/Image5.jpg" alt="coffee house">
-                <div class="portfolio__app_content flex-row">
-                    <div class="portfolio__textImg flex-col">
+                <img class="portfolio__img" src="./src/Image5.jpg" alt="Coffee house">
+                <div class="portfolio__app_content">
+                    <div class="portfolio__app__tittle">
                         <a href="/test"><h4>Coffee House Landing Page</h4></a>
-                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="portfolio__appDivImg">
+                    <div class="portfolio__app__text">
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./src/iconos/send.svg" alt="6">
                     </div>
                 </div>  
             </li>
             <li class="portfolio__app">
-                <img class="portfolio__img" src="./src/Image6.jpg" alt="home services">
-                <div class="portfolio__app_content flex-row">
-                    <div class="portfolio__textImg flex-col">
+                <img class="portfolio__img" src="./src/Image6.jpg" alt="Home Services Page">
+                <div class="portfolio__app_content">
+                    <div class="portfolio__app__tittle">
                         <a href="/test"><h4>Home Services Page</h4></a>
-                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="portfolio__appDivImg">
+                    <div class="portfolio__app__text">
+                        <p  class="margin-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <img src="./src/iconos/send.svg" alt="6">
                     </div>
                 </div>  
             </li>
         </ul>
     </section>
-    <section>
-        <h2 class="tittleSection">My Portfolio</h2>
+    <section class="core">
+        <h2 class="tittleSection">Core Design Skills</h2>
         <p class="infoSection">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
         <ul class="coreGrid">
-            <li class="flex-col">
-                <label for="interactDesign">Interaction Design</label>
-                <progress id="interactDesign" max="100" value="70">70%</progress>
+            <li class="coreProgress">
+                <label for="interactDesign" class="coreProgress__text">Interaction Design</label>
+                <div class="coreProgress__bar">
+                    <progress class="bar" id="interactDesign" max="100" value="60">60%</progress>
+                    <p>60%</p>
+                </div>
             </li>
-            <li class="flex-col">
-                <label for="interactDesign2">Usability Testing</label>
-                <progress id="interactDesign2" max="100" value="80">70%</progress>
+            <li class="coreProgress">
+                <label for="interactDesign" class="coreProgress__text">Figma</label>
+                <div class="coreProgress__bar">
+                    <progress class="bar" id="interactDesign" max="100" value="95">95%</progress>
+                    <p>95%</p>
+                </div>
             </li>
-            <li class="flex-col">
-                <label for="interactDesign3">Figma</label>
-                <progress id="interactDesign3" max="100" value="60">70%</progress>
+            <li class="coreProgress">
+                <label for="interactDesign" class="coreProgress__text">Usability Testing</label>
+                <div class="coreProgress__bar">
+                    <progress class="bar" id="interactDesign" max="100" value="70">70%</progress>
+                    <p>70%</p>
+                </div>
             </li>
-            <li class="flex-col">
-                <label for="interactDesign4">Prototyping</label>
-                <progress id="interactDesign4" max="100" value="15">70%</progress>
+            <li class="coreProgress">
+                <label for="interactDesign" class="coreProgress__text">Prototyping</label>
+                <div class="coreProgress__bar">
+                    <progress class="bar" id="interactDesign" max="100" value="80">80%</progress>
+                    <p>80%</p>
+                </div>
             </li>
-            <li class="flex-col">
-                <label for="interactDesign5">User Research</label>
-                <progress id="interactDesign5" max="100" value="90">70%</progress>
+            <li class="coreProgress">
+                <label for="interactDesign" class="coreProgress__text">User Research</label>
+                <div class="coreProgress__bar">
+                    <progress class="bar" id="interactDesign" max="100" value="45">45%</progress>
+                    <p>45%</p>
+                </div>
             </li>
-            <li class="flex-col">
-                <label for="interactDesign6">Information Architecture</label>
-                <progress id="interactDesign6" max="100" value="45">70%</progress>
+            <li class="coreProgress">
+                <label for="interactDesign" class="coreProgress__text">Information Arquitecture</label>
+                <div class="coreProgress__bar">
+                    <progress class="bar" id="interactDesign" max="100" value="50">50%</progress>
+                    <p>50%</p>
+                </div>
             </li>
-            
         </ul>
     </section>
-    <section>
-        <div>
-            <h3>Get in touch</h3>
-            <p>Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
-            <ul>
-                <li>
+    <section class="contact">
+        <div class="contactInfo">
+            <div class="redCircle circleContact"></div>
+            <div class="contactInfo__header">
+                <h3 class="contact__tittleSection">Get in touch</h3>
+                <p class="contact__infoSection">Explore our design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+            </div>
+            <ul class="contactInfo__types">
+                <li class="contactInfo__type">
                     <img src="./src/iconos/iconTelf.svg" alt="6">
-                    <p>+15 982 234 125</p>
+                    <p>+1205 5872 321</p>
                 </li>
-                <li>
-                    <img src="./src/iconos/iconMail.svg" alt="6">
-                    <p>test@gmail.com</p>
-                </li>
-                <li>
+                <li class="contactInfo__type">
                     <img src="./src/iconos/iconLocation.svg" alt="6">
-                    <p>Calle aleatorias</p>
+                    <p>contact@sarajonesdesign.com</p>
+                </li>
+                <li class="contactInfo__type">
+                    <img src="./src/iconos/iconMail.svg" alt="6">
+                    <p>1234 Design Street,Creativeville, Webland,Imaginary State, 98765</p>
                 </li>
             </ul>
-            <ul>
+            <ul class="contactInfo_social">
                 <li>
                     <a><img src="./src/iconos/iconInstagram.svg" alt="6"></a>
                 </li>
@@ -223,43 +248,52 @@
                 </li>
             </ul>
         </div>
-        <form class="flex-col" action="onSubmit">
-            <label for="name">First name</label>
-            <input id="name" type="text" placeholder="First Name" required/>
-            <label for="email">Correo</label>
-            <input id="email" type="email" placeholder="Email"/>
-            <label for="telf">Phone Number</label>
-            <input id="telf" type="tel" placeholder="Phone Number"/>
-            <label for="msg">Message</label>
-            <textarea name="textarea" rows="8" >Your message</textarea>
-            <button type="submit">Enviar</button>
+        <form class="contactForm" action="onSubmit">
+            <div id="floatContainer" class="float-container">
+                <label class="label" for="name">First name</label>
+                <input id="name" type="text" data-placeholder="First Name" required/>
+            </div>
+            <div id="floatContainer" class="float-container">
+                <label class="label" for="name">Correo</label>
+                <input id="email" type="email" data-placeholder="Correo" required/>
+            </div>
+            <div id="floatContainer" class="float-container">
+                <label class="label" for="telf">Phone Number</label>
+                <input id="telf" type="tel" data-placeholder="Phone Number" required/>
+            </div>
+            <div id="floatContainer" class="float-container">
+                <label class="label" for="msg">Message</label>
+                <textarea name="textarea" rows="8" data-placeholder="Message" ></textarea>
+            </div>
+            <button class="btnSend" type="submit">Send Message</button>
         </form>
     </section>
-    <footer>
-        <div>
-            <ul>
-                <li><a>About</a></li>
-                <li><a>Services</a></li>
-            <li><a href="#topBar"><img src="./src/logo.svg" alt="sarah" height="auto" width="auto"></a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blog</a></li>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <a class="whiteText">About</a>
+            <a class="whiteText">Services</a>
+            <a href="#topBar"><img src="./src/logo.svg" alt="sarah" width="auto" class="logo"></a>
+            <a class="whiteText">Portfolio</a>
+            <a class="whiteText">Blog </a>
+        </nav>
+        <div class="socialInfo">
+            <h6 class="footer__text">Follow me on social media</h6>
+            <ul class="footer__social">
+                <li class="social__link">
+                    <a><img src="./src/iconos/iconInstagram.svg" alt="6"></a>
+                </li>
+                <li class="social__link">
+                    <a><img src="./src/iconos/iconTwitter.svg" alt="6"></a>
+                </li>
+                <li class="social__link">
+                    <a><img src="./src/iconos/iconDribbble.svg" alt="6"></a>
+                </li>
+                <li class="social__link">
+                    <a><img src="./src/iconos/iconFacebook.svg" alt="6"></a>
+                </li>
             </ul>
         </div>
-        <h6>Follow me on social media</h6>
-        <ul>
-            <li>
-                <a><img src="./src/iconos/iconInstagram.svg" alt="6"></a>
-            </li>
-            <li>
-                <a><img src="./src/iconos/iconTwitter.svg" alt="6"></a>
-            </li>
-            <li>
-                <a><img src="./src/iconos/iconDribbble.svg" alt="6"></a>
-            </li>
-            <li>
-                <a><img src="./src/iconos/iconFacebook.svg" alt="6"></a>
-            </li>
-        </ul>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
